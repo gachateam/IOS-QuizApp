@@ -2,7 +2,7 @@
 //  QuizAppUITests.swift
 //  QuizAppUITests
 //
-//  Created by Nguyen Tien on 6/2/21.
+//  Created by Nguyen Tien on 05/06/2021.
 //
 
 import XCTest
