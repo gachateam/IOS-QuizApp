@@ -142,6 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				EA2A1057266BE1FE009C5980 /* GoogleService-Info.plist */,
+				EA2A0FFB266BD995009C5980 /* AppDelegate.swift */,
+				EA2A1004266BD99C009C5980 /* Assets.xcassets */,
+				EA2A1006266BD99C009C5980 /* LaunchScreen.storyboard */,
+				EA2A1009266BD99C009C5980 /* Info.plist */,
 				EA2A107C266BE42D009C5980 /* System File */,
 				EA2A0FFD266BD995009C5980 /* SceneDelegate.swift */,
 				EA2A0FFF266BD995009C5980 /* ViewController.swift */,
@@ -171,10 +175,6 @@
 		EA2A107C266BE42D009C5980 /* System File */ = {
 			isa = PBXGroup;
 			children = (
-				EA2A0FFB266BD995009C5980 /* AppDelegate.swift */,
-				EA2A1004266BD99C009C5980 /* Assets.xcassets */,
-				EA2A1006266BD99C009C5980 /* LaunchScreen.storyboard */,
-				EA2A1009266BD99C009C5980 /* Info.plist */,
 			);
 			path = "System File";
 			sourceTree = "<group>";
