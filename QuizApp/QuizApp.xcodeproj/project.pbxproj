@@ -141,6 +141,7 @@
 		EA2A0FFA266BD995009C5980 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				EAAB9D98266CCF83009268B9 /* View */,
 				EA2A1057266BE1FE009C5980 /* GoogleService-Info.plist */,
 				EA2A0FFB266BD995009C5980 /* AppDelegate.swift */,
 				EA2A1004266BD99C009C5980 /* Assets.xcassets */,
@@ -177,6 +178,13 @@
 			children = (
 			);
 			path = "System File";
+			sourceTree = "<group>";
+		};
+		EAAB9D98266CCF83009268B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -603,7 +611,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = vn.tdc.fit.QuizApp;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.tdc.fit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -622,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = vn.tdc.fit.QuizApp;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.tdc.fit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
