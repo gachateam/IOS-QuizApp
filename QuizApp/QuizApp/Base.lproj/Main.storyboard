@@ -223,33 +223,41 @@
             </objects>
             <point key="canvasLocation" x="829" y="3164"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="DFz-tr-8HZ">
             <objects>
-                <viewController id="CJe-yG-7fq" sceneMemberID="viewController">
+                <viewController id="CJe-yG-7fq" customClass="QuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apj-mN-HC8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-L6-9fL">
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-L6-9fL">
                                 <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="acd-qM-02W" kind="embed" identifier="container" id="6LF-ci-xp4"/>
                                 </connections>
                             </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CbU-hp-FDa">
+                                <rect key="frame" x="89" y="175" width="236" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentSelectedItem:" destination="CJe-yG-7fq" eventType="valueChanged" id="I0W-Ql-FPo"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hcu-EO-xy8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="eWB-L6-9fL" firstAttribute="centerX" secondItem="apj-mN-HC8" secondAttribute="centerX" id="OzX-VK-ytD"/>
-                            <constraint firstItem="eWB-L6-9fL" firstAttribute="centerY" secondItem="apj-mN-HC8" secondAttribute="centerY" id="eKV-0m-ev6"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WUl-o5-nq8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bo1-Pp-iPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829" y="3964"/>
+            <point key="canvasLocation" x="828.98550724637687" y="3963.6160714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ctR-Sb-LLO">
@@ -374,23 +382,37 @@
             </objects>
             <point key="canvasLocation" x="1558" y="3964"/>
         </scene>
-        <!--View Controller-->
+        <!--Image Question View Controller-->
         <scene sceneID="cdM-IH-tJ6">
             <objects>
-                <viewController id="Pvf-Po-eXe" sceneMemberID="viewController">
+                <viewController id="Pvf-Po-eXe" customClass="ImageQuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Ga-kq-1ej">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g31-Ws-Shb">
+                                <rect key="frame" x="94" y="133" width="138" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lH8-lm-Bs0"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <color key="tintColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="g31-Ws-Shb" firstAttribute="centerY" secondItem="1Ga-kq-1ej" secondAttribute="centerY" id="fjk-kA-IRH"/>
+                            <constraint firstItem="g31-Ws-Shb" firstAttribute="centerX" secondItem="1Ga-kq-1ej" secondAttribute="centerX" id="yLU-Sx-gcd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ES7-86-NCG"/>
                     <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="input" destination="g31-Ws-Shb" id="9Ho-u3-QTA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28T-rR-RZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2235" y="3763"/>
+            <point key="canvasLocation" x="2234.7826086956525" y="3762.7232142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Bk-U6-szB">
