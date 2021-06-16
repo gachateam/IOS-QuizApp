@@ -10,6 +10,7 @@
 		4ED8A442EEFAFC50E44D6999 /* Pods_QuizApp_QuizAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA0BC8B8E2995DF29F5A1DE /* Pods_QuizApp_QuizAppUITests.framework */; };
 		4FBA6920AFF2FE83964058E3 /* Pods_QuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6B884E7A3430BFFFD90B2 /* Pods_QuizApp.framework */; };
 		D23BC9EADC0B8C50FF12E968 /* Pods_QuizAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A57A3648F47EC43C782B1B /* Pods_QuizAppTests.framework */; };
+		EA05B941267A4B4700507968 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA05B940267A4B4700507968 /* GoogleService-Info.plist */; };
 		EA2A0FFC266BD995009C5980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A0FFB266BD995009C5980 /* AppDelegate.swift */; };
 		EA2A0FFE266BD995009C5980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A0FFD266BD995009C5980 /* SceneDelegate.swift */; };
 		EA2A1000266BD995009C5980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A0FFF266BD995009C5980 /* ViewController.swift */; };
@@ -18,7 +19,9 @@
 		EA2A1008266BD99C009C5980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2A1006266BD99C009C5980 /* LaunchScreen.storyboard */; };
 		EA2A1013266BD99C009C5980 /* QuizAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A1012266BD99C009C5980 /* QuizAppTests.swift */; };
 		EA2A101E266BD99D009C5980 /* QuizAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A101D266BD99D009C5980 /* QuizAppUITests.swift */; };
-		EA2A1058266BE1FE009C5980 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA2A1057266BE1FE009C5980 /* GoogleService-Info.plist */; };
+		EA3F61C226790E9700894F14 /* EmptySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F61C126790E9600894F14 /* EmptySegue.swift */; };
+		EA3F61CA26790F0600894F14 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F61C926790F0600894F14 /* ContainerViewController.swift */; };
+		EAAB9DB3266D5C76009268B9 /* SigninController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAB9DB2266D5C76009268B9 /* SigninController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 		D1C6B884E7A3430BFFFD90B2 /* Pods_QuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A57A3648F47EC43C782B1B /* Pods_QuizAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA0BC8B8E2995DF29F5A1DE /* Pods_QuizApp_QuizAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizApp_QuizAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA05B940267A4B4700507968 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		EA2A0FF8266BD995009C5980 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2A0FFB266BD995009C5980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA2A0FFD266BD995009C5980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +63,9 @@
 		EA2A1019266BD99D009C5980 /* QuizAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2A101D266BD99D009C5980 /* QuizAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITests.swift; sourceTree = "<group>"; };
 		EA2A101F266BD99D009C5980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA2A1057266BE1FE009C5980 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA3F61C126790E9600894F14 /* EmptySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptySegue.swift; sourceTree = SOURCE_ROOT; };
+		EA3F61C926790F0600894F14 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = SOURCE_ROOT; };
+		EAAB9DB2266D5C76009268B9 /* SigninController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninController.swift; sourceTree = "<group>"; };
 		EEA66255DB05B7932FC81E13 /* Pods-QuizApp-QuizAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp-QuizAppUITests.release.xcconfig"; path = "Target Support Files/Pods-QuizApp-QuizAppUITests/Pods-QuizApp-QuizAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F6175506758963593552FA7F /* Pods-QuizAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizAppTests.release.xcconfig"; path = "Target Support Files/Pods-QuizAppTests/Pods-QuizAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD66EE77A528944816324A62 /* Pods-QuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.debug.xcconfig"; path = "Target Support Files/Pods-QuizApp/Pods-QuizApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,16 +147,17 @@
 		EA2A0FFA266BD995009C5980 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				EAAB9D98266CCF83009268B9 /* View */,
-				EA2A1057266BE1FE009C5980 /* GoogleService-Info.plist */,
+				EA05B940267A4B4700507968 /* GoogleService-Info.plist */,
 				EA2A0FFB266BD995009C5980 /* AppDelegate.swift */,
 				EA2A1004266BD99C009C5980 /* Assets.xcassets */,
 				EA2A1006266BD99C009C5980 /* LaunchScreen.storyboard */,
 				EA2A1009266BD99C009C5980 /* Info.plist */,
-				EA2A107C266BE42D009C5980 /* System File */,
 				EA2A0FFD266BD995009C5980 /* SceneDelegate.swift */,
 				EA2A0FFF266BD995009C5980 /* ViewController.swift */,
 				EA2A1001266BD995009C5980 /* Main.storyboard */,
+				EA3F61B926790D6E00894F14 /* ContainerView */,
+				EAAB9DAE266D5BCF009268B9 /* Controller */,
+				EAAB9D98266CCF83009268B9 /* View */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -173,11 +180,13 @@
 			path = QuizAppUITests;
 			sourceTree = "<group>";
 		};
-		EA2A107C266BE42D009C5980 /* System File */ = {
+		EA3F61B926790D6E00894F14 /* ContainerView */ = {
 			isa = PBXGroup;
 			children = (
+				EA3F61C926790F0600894F14 /* ContainerViewController.swift */,
+				EA3F61C126790E9600894F14 /* EmptySegue.swift */,
 			);
-			path = "System File";
+			path = ContainerView;
 			sourceTree = "<group>";
 		};
 		EAAB9D98266CCF83009268B9 /* View */ = {
@@ -185,6 +194,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EAAB9DAE266D5BCF009268B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB9DB2266D5C76009268B9 /* SigninController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2A1008266BD99C009C5980 /* LaunchScreen.storyboard in Resources */,
-				EA2A1058266BE1FE009C5980 /* GoogleService-Info.plist in Resources */,
+				EA05B941267A4B4700507968 /* GoogleService-Info.plist in Resources */,
 				EA2A1005266BD99C009C5980 /* Assets.xcassets in Resources */,
 				EA2A1003266BD995009C5980 /* Main.storyboard in Resources */,
 			);
@@ -427,8 +444,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2A1000266BD995009C5980 /* ViewController.swift in Sources */,
+				EAAB9DB3266D5C76009268B9 /* SigninController.swift in Sources */,
 				EA2A0FFC266BD995009C5980 /* AppDelegate.swift in Sources */,
 				EA2A0FFE266BD995009C5980 /* SceneDelegate.swift in Sources */,
+				EA3F61CA26790F0600894F14 /* ContainerViewController.swift in Sources */,
+				EA3F61C226790E9700894F14 /* EmptySegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
