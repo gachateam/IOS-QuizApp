@@ -1,25 +1,30 @@
 //
-//  SigninController.swift
+//  SignUpViewController.swift
 //  QuizApp
 //
-//  Created by Nguyen Tien on 06/06/2021.
+//  Created by Yamikuro on 6/15/21.
 //
 
 import UIKit
 import FirebaseAuth
 
-class SigninController: UIViewController {
+class SignUpViewController: UIViewController {
+    @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var email: UITextField!
-    
     @IBOutlet weak var password: UITextField!
-    //MARK: - properties
-   
-    
+    @IBOutlet weak var comfirmPass: UITextField!
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
     }
     
-    @IBAction func loginBtn(_ sender: UIButton) {
+    @IBAction func signUpBtn(_ sender: UIButton) {
+        if userName.text?.isEmpty == true {
+            print("Please enter username")
+            return
+        }
         if email.text?.isEmpty == true {
             print("Please enter email")
             return
@@ -28,12 +33,17 @@ class SigninController: UIViewController {
             print("Please enter password")
             return
         }
-        login()
-        print("login success")
+        if comfirmPass.text != password.text {
+            print("Password doesn't match")
+            return
+        }
+        
+        signUp()
+        print("Sign up successful!")
     }
     
-    func login(){
-        Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (result, error) in
+    func signUp(){
+        Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (result, error) in
             if let error = error {
                 print("Error: ", error.localizedDescription)
                 return
@@ -43,10 +53,13 @@ class SigninController: UIViewController {
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: true)
         }
+        
     }
+    
+     
     /*
+     
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.

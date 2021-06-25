@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD:QuizApp/QuizApp/View/Base.lproj/Main.storyboard
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oiX-bI-veh">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kdu-Hr-Jh5">
+>>>>>>> login:QuizApp/QuizApp/Base.lproj/Main.storyboard
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -67,6 +71,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsC-9X-6Hd">
                                                 <rect key="frame" x="168" y="320" width="38" height="30"/>
                                                 <state key="normal" title="Login"/>
+                                                <connections>
+                                                    <action selector="loginBtn:" destination="Uk5-yz-U3R" eventType="touchUpInside" id="F5S-l4-KTf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -140,7 +147,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+<<<<<<< HEAD:QuizApp/QuizApp/View/Base.lproj/Main.storyboard
                         <segue destination="oiX-bI-veh" kind="presentation" modalPresentationStyle="fullScreen" id="W1k-yq-hbs"/>
+=======
+                        <outlet property="email" destination="Qol-tl-LMi" id="4kn-ff-ah2"/>
+                        <outlet property="password" destination="2sK-Hv-X9V" id="2M7-hW-0Fn"/>
+                        <segue destination="4Aa-PK-fNz" kind="show" identifier="login" id="LFp-u9-S4p"/>
+>>>>>>> login:QuizApp/QuizApp/Base.lproj/Main.storyboard
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Uh-wg-BFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -150,8 +163,30 @@
         <!--Home-->
         <scene sceneID="Ie7-uN-hkS">
             <objects>
+<<<<<<< HEAD:QuizApp/QuizApp/View/Base.lproj/Main.storyboard
                 <viewController id="k2H-Dc-1f1" customClass="HomeViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lji-PS-PTe">
+=======
+                <navigationController storyboardIdentifier="home" id="4Aa-PK-fNz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dPg-13-Rbm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gpy-8N-bPv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oiX-bI-veh" kind="relationship" relationship="rootViewController" id="xGO-11-uui"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Veb-Ba-lN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="688"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="CBn-3L-ALk">
+            <objects>
+                <viewController id="qZV-zw-XqP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKm-Ft-uXb">
+>>>>>>> login:QuizApp/QuizApp/Base.lproj/Main.storyboard
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -232,14 +267,15 @@
             </objects>
             <point key="canvasLocation" x="1732" y="2660"/>
         </scene>
-        <!--Question View Controller-->
+        <!--View Controller-->
         <scene sceneID="DFz-tr-8HZ">
             <objects>
-                <viewController id="CJe-yG-7fq" customClass="QuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CJe-yG-7fq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apj-mN-HC8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD:QuizApp/QuizApp/View/Base.lproj/Main.storyboard
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njg-xg-8ew" customClass="CustomButton" customModule="QuizApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="763" width="414" height="50"/>
                                 <constraints>
@@ -248,20 +284,28 @@
                                 <state key="normal" title="Next">
                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                 </state>
+=======
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-L6-9fL">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+>>>>>>> login:QuizApp/QuizApp/Base.lproj/Main.storyboard
                                 <connections>
                                     <action selector="clickNext:" destination="CJe-yG-7fq" eventType="touchUpInside" id="TMv-6b-eNs"/>
                                 </connections>
+<<<<<<< HEAD:QuizApp/QuizApp/View/Base.lproj/Main.storyboard
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-L6-9fL">
                                 <rect key="frame" x="0.0" y="88" width="414" height="675"/>
                                 <connections>
                                     <segue destination="acd-qM-02W" kind="embed" identifier="container" id="6LF-ci-xp4"/>
                                 </connections>
+=======
+>>>>>>> login:QuizApp/QuizApp/Base.lproj/Main.storyboard
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hcu-EO-xy8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+<<<<<<< HEAD:QuizApp/QuizApp/View/Base.lproj/Main.storyboard
                             <constraint firstItem="eWB-L6-9fL" firstAttribute="leading" secondItem="Hcu-EO-xy8" secondAttribute="leading" id="IPr-Fq-0R9"/>
                             <constraint firstAttribute="bottomMargin" secondItem="njg-xg-8ew" secondAttribute="bottom" constant="10" id="NpO-li-2Ey"/>
                             <constraint firstItem="njg-xg-8ew" firstAttribute="leading" secondItem="Hcu-EO-xy8" secondAttribute="leading" id="PTw-is-gTq"/>
@@ -271,12 +315,17 @@
                             <constraint firstItem="eWB-L6-9fL" firstAttribute="top" secondItem="Hcu-EO-xy8" secondAttribute="top" id="kju-Vr-r7E"/>
                             <constraint firstItem="njg-xg-8ew" firstAttribute="top" secondItem="eWB-L6-9fL" secondAttribute="bottom" id="yG6-ZS-wnX"/>
                             <constraint firstItem="Hcu-EO-xy8" firstAttribute="trailing" secondItem="njg-xg-8ew" secondAttribute="trailing" id="zAi-h9-SNi"/>
+=======
+                            <constraint firstItem="eWB-L6-9fL" firstAttribute="centerX" secondItem="apj-mN-HC8" secondAttribute="centerX" id="OzX-VK-ytD"/>
+                            <constraint firstItem="eWB-L6-9fL" firstAttribute="centerY" secondItem="apj-mN-HC8" secondAttribute="centerY" id="eKV-0m-ev6"/>
+>>>>>>> login:QuizApp/QuizApp/Base.lproj/Main.storyboard
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9xh-Qk-Par"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bo1-Pp-iPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD:QuizApp/QuizApp/View/Base.lproj/Main.storyboard
             <point key="canvasLocation" x="702.89855072463774" y="3458.7053571428569"/>
         </scene>
         <!--Home-->
@@ -312,6 +361,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6qO-sw-do6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1732" y="1553"/>
+=======
+            <point key="canvasLocation" x="829" y="3964"/>
+>>>>>>> login:QuizApp/QuizApp/Base.lproj/Main.storyboard
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ctR-Sb-LLO">
@@ -332,10 +384,10 @@
             </objects>
             <point key="canvasLocation" x="1732" y="646"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="W8w-tR-gaL">
             <objects>
-                <viewController id="DeY-RF-QWJ" sceneMemberID="viewController">
+                <viewController id="DeY-RF-QWJ" customClass="SignUpViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cni-ZC-578">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,6 +426,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWr-Qq-jkD">
                                         <rect key="frame" x="183" y="478" width="48" height="30"/>
                                         <state key="normal" title="Signup"/>
+                                        <connections>
+                                            <action selector="signUpBtn:" destination="DeY-RF-QWJ" eventType="touchUpInside" id="TR1-Nm-5WR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -392,6 +447,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fk5-Uh-L1a"/>
+                    <connections>
+                        <outlet property="comfirmPass" destination="zzc-ig-MrK" id="Wc5-Ff-2pu"/>
+                        <outlet property="email" destination="j1h-Mt-bzf" id="i0n-gb-qqK"/>
+                        <outlet property="password" destination="YrC-6F-hlO" id="IXj-hb-QfS"/>
+                        <outlet property="userName" destination="54G-LE-owg" id="1sH-KB-gps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQP-ov-d79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -438,6 +499,7 @@
             </objects>
             <point key="canvasLocation" x="1629" y="3474"/>
         </scene>
+<<<<<<< HEAD:QuizApp/QuizApp/View/Base.lproj/Main.storyboard
         <!--Ques Mul View Controller-->
         <scene sceneID="cdM-IH-tJ6">
             <objects>
@@ -470,6 +532,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28T-rR-RZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2438" y="3325"/>
+=======
+        <!--View Controller-->
+        <scene sceneID="cdM-IH-tJ6">
+            <objects>
+                <viewController id="Pvf-Po-eXe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ga-kq-1ej">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lH8-lm-Bs0"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="tintColor" systemColor="linkColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ES7-86-NCG"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28T-rR-RZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2235" y="3763"/>
+>>>>>>> login:QuizApp/QuizApp/Base.lproj/Main.storyboard
         </scene>
         <!--Ques Mul Image View Controller-->
         <scene sceneID="7Bk-U6-szB">

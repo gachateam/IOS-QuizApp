@@ -34,8 +34,11 @@ DerivedData/
 timeline.xctimeline
 playground.xcworkspace
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> login
 
 # Swift Package Manager
 #
