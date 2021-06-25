@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oiX-bI-veh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kdu-Hr-Jh5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -152,7 +152,7 @@
             </objects>
             <point key="canvasLocation" x="1742.0289855072465" y="-116.51785714285714"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="Ie7-uN-hkS">
             <objects>
                 <navigationController storyboardIdentifier="home" id="4Aa-PK-fNz" sceneMemberID="viewController">
@@ -167,12 +167,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Veb-Ba-lN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="688"/>
+            <point key="canvasLocation" x="3030" y="602"/>
         </scene>
-        <!--Item 2-->
+        <!--Home-->
         <scene sceneID="CBn-3L-ALk">
             <objects>
-                <viewController id="qZV-zw-XqP" sceneMemberID="viewController">
+                <viewController id="qZV-zw-XqP" customClass="HomeViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKm-Ft-uXb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,7 +240,6 @@
         <!--History-->
         <scene sceneID="a4b-0s-nTf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="azd-Ab-EN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="yuW-zh-5Op" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="twI-uJ-G8E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -251,13 +250,14 @@
                     <tabBarItem key="tabBarItem" tag="2" title="History" image="goforward" catalog="system" id="pKR-9e-x25"/>
                     <navigationItem key="navigationItem" title="History" id="HGQ-Bp-H3b"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azd-Ab-EN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1732" y="2660"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="DFz-tr-8HZ">
             <objects>
-                <viewController id="CJe-yG-7fq" sceneMemberID="viewController">
+                <viewController id="CJe-yG-7fq" customClass="QuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apj-mN-HC8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +271,8 @@
                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickNext:" destination="CJe-yG-7fq" eventType="touchUpInside" id="TMv-6b-eNs"/>
+                                    <action selector="clickNext:" destination="Ggm-Vr-9G4" eventType="touchUpInside" id="7zy-Td-D1A"/>
+                                    <action selector="clickNext:" destination="CJe-yG-7fq" eventType="touchUpInside" id="Hec-Nv-vcx"/>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-L6-9fL">
@@ -298,6 +299,7 @@
                     <navigationItem key="navigationItem" id="9xh-Qk-Par"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bo1-Pp-iPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ggm-Vr-9G4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="702.89855072463774" y="3458.7053571428569"/>
         </scene>
@@ -311,7 +313,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="k2H-Dc-1f1" kind="relationship" relationship="rootViewController" id="eBe-Jl-Pv4"/>
+                        <segue destination="qZV-zw-XqP" kind="relationship" relationship="rootViewController" id="v56-Nn-Ddo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EuF-iw-Qix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -335,10 +337,10 @@
             </objects>
             <point key="canvasLocation" x="1732" y="1553"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab View Controller-->
         <scene sceneID="ctR-Sb-LLO">
             <objects>
-                <tabBarController id="oiX-bI-veh" sceneMemberID="viewController">
+                <tabBarController id="oiX-bI-veh" customClass="HomeTabViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xq6-cv-exg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

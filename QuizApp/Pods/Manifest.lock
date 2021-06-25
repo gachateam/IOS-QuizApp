@@ -9,12 +9,9 @@ PODS:
     - FirebaseAnalytics (~> 8.2.0)
   - Firebase/CoreOnly (8.2.0):
     - FirebaseCore (= 8.2.0)
-<<<<<<< HEAD
   - Firebase/Database (8.2.0):
     - Firebase/CoreOnly
     - FirebaseDatabase (~> 8.2.0)
-=======
->>>>>>> login
   - FirebaseAnalytics (8.2.0):
     - FirebaseAnalytics/AdIdSupport (= 8.2.0)
     - FirebaseCore (~> 8.0)
@@ -47,12 +44,9 @@ PODS:
     - GoogleUtilities/Environment (~> 7.4)
     - GoogleUtilities/Logger (~> 7.4)
     - nanopb (~> 2.30908.0)
-<<<<<<< HEAD
   - FirebaseDatabase (8.2.0):
     - FirebaseCore (~> 8.0)
     - leveldb-library (~> 1.22)
-=======
->>>>>>> login
   - FirebaseInstallations (8.2.0):
     - FirebaseCore (~> 8.0)
     - GoogleUtilities/Environment (~> 7.4)
@@ -95,10 +89,7 @@ PODS:
   - GoogleUtilities/UserDefaults (7.4.3):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.6.1)
-<<<<<<< HEAD
   - leveldb-library (1.22.1)
-=======
->>>>>>> login
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -109,10 +100,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
-<<<<<<< HEAD
   - Firebase/Database
-=======
->>>>>>> login
 
 SPEC REPOS:
   trunk:
@@ -127,10 +115,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - GTMSessionFetcher
-<<<<<<< HEAD
     - leveldb-library
-=======
->>>>>>> login
     - nanopb
     - PromisesObjC
 
@@ -140,26 +125,16 @@ SPEC CHECKSUMS:
   FirebaseAuth: 4c4fb0ba1a169f3acb4aa5b724f7ae7c0999ee44
   FirebaseCore: 3a83f24c3de69ec9f9a426e2598125ea51f3a2ce
   FirebaseCoreDiagnostics: 61384f54989065b15c36b5922b65112e86811d3c
-<<<<<<< HEAD
   FirebaseDatabase: 9c231733363229ac26a55ee9ae9031e94cdb9a7d
-=======
->>>>>>> login
   FirebaseInstallations: 9394ea09e242bf0816e95ac30e56a9214cc86ced
   GoogleAppMeasurement: b52eafc9dff542d580700e708216568bd2fbf168
   GoogleDataTransport: 04c3e9a480bbcaa2ec3f5d27f1cdeb6a92f20c8d
   GoogleUtilities: 45dbb24a7f351d69d0a601482b39ad6c32e30dab
   GTMSessionFetcher: 36689134877faeb055b27dfa4ccc9ceaa42e029e
-<<<<<<< HEAD
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
 PODFILE CHECKSUM: f606566cb8b52fa0622c2d0762a6a50f3abb46de
-=======
-  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-
-PODFILE CHECKSUM: 82a28e6e30423cf7cb5b37570d19e44c6122b478
->>>>>>> login
 
 COCOAPODS: 1.10.1

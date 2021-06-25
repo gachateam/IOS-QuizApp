@@ -22,6 +22,7 @@ class QuestionViewController: UIViewController {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
     }
     
     @IBAction func clickNext(_ sender: Any) {
@@ -30,6 +31,7 @@ class QuestionViewController: UIViewController {
         }
         updateUI()
     }
+    
     func updateUI()  {
         switch question[position].type {
         case Ques.QUES_MUL:

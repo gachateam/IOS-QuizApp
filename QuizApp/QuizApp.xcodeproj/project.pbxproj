@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4ED8A442EEFAFC50E44D6999 /* Pods_QuizApp_QuizAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA0BC8B8E2995DF29F5A1DE /* Pods_QuizApp_QuizAppUITests.framework */; };
 		4FBA6920AFF2FE83964058E3 /* Pods_QuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6B884E7A3430BFFFD90B2 /* Pods_QuizApp.framework */; };
-		90414A842679C76200CAC4B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90414A832679C76200CAC4B6 /* SignUpViewController.swift */; };
 		D23BC9EADC0B8C50FF12E968 /* Pods_QuizAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A57A3648F47EC43C782B1B /* Pods_QuizAppTests.framework */; };
 		EA05B941267A4B4700507968 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA05B940267A4B4700507968 /* GoogleService-Info.plist */; };
 		EA2A0FFC266BD995009C5980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A0FFB266BD995009C5980 /* AppDelegate.swift */; };
@@ -35,6 +34,7 @@
 		EA78A3EF26859E51006956C8 /* QuesMulImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78A3EE26859E51006956C8 /* QuesMulImageViewController.swift */; };
 		EA78A3F426859E60006956C8 /* QuesListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78A3F326859E60006956C8 /* QuesListenViewController.swift */; };
 		EA78A3F926859E6E006956C8 /* QuesSpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78A3F826859E6E006956C8 /* QuesSpeakViewController.swift */; };
+		EA78A4E72685B226006956C8 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78A4E62685B226006956C8 /* QuestionViewController.swift */; };
 		EA7F5650268428E500693270 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F564F268428E500693270 /* CollectionViewCell.swift */; };
 		EAAB9DB3266D5C76009268B9 /* SigninController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAB9DB2266D5C76009268B9 /* SigninController.swift */; };
 		EABCC508267E334D00D181F4 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCC506267E334D00D181F4 /* HomeTabViewController.swift */; };
@@ -59,14 +59,12 @@
 
 /* Begin PBXFileReference section */
 		11D5C22110FD6FD72FBE71CE /* Pods-QuizAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizAppTests.debug.xcconfig"; path = "Target Support Files/Pods-QuizAppTests/Pods-QuizAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		90414A832679C76200CAC4B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96373BD5DD9D545BDEA9ED6D /* Pods-QuizApp-QuizAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp-QuizAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuizApp-QuizAppUITests/Pods-QuizApp-QuizAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B41ED42B63B3DF2BD6941C0C /* Pods-QuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.release.xcconfig"; path = "Target Support Files/Pods-QuizApp/Pods-QuizApp.release.xcconfig"; sourceTree = "<group>"; };
 		D1C6B884E7A3430BFFFD90B2 /* Pods_QuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A57A3648F47EC43C782B1B /* Pods_QuizAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA0BC8B8E2995DF29F5A1DE /* Pods_QuizApp_QuizAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizApp_QuizAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA05B940267A4B4700507968 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "QuizApp/Sytem/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		EA05B948267A4E3000507968 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		EA05B94D267A4FBA00507968 /* ImageQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuestionViewController.swift; sourceTree = "<group>"; };
 		EA2A0FF8266BD995009C5980 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2A0FFB266BD995009C5980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +95,7 @@
 		EA78A3EE26859E51006956C8 /* QuesMulImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuesMulImageViewController.swift; sourceTree = "<group>"; };
 		EA78A3F326859E60006956C8 /* QuesListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuesListenViewController.swift; sourceTree = "<group>"; };
 		EA78A3F826859E6E006956C8 /* QuesSpeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuesSpeakViewController.swift; sourceTree = "<group>"; };
+		EA78A4E62685B226006956C8 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		EA7F564F268428E500693270 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EAAB9DB2266D5C76009268B9 /* SigninController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninController.swift; sourceTree = "<group>"; };
 		EABCC506267E334D00D181F4 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
@@ -258,7 +257,6 @@
 			isa = PBXGroup;
 			children = (
 				EAAB9DB2266D5C76009268B9 /* SigninController.swift */,
-				EA05B948267A4E3000507968 /* QuestionViewController.swift */,
 				EA05B94D267A4FBA00507968 /* ImageQuestionViewController.swift */,
 				EABCC506267E334D00D181F4 /* HomeTabViewController.swift */,
 				EA4DBFCA26838B89001B1E5F /* HomeViewController.swift */,
@@ -267,6 +265,7 @@
 				EA78A3EE26859E51006956C8 /* QuesMulImageViewController.swift */,
 				EA78A3F326859E60006956C8 /* QuesListenViewController.swift */,
 				EA78A3F826859E6E006956C8 /* QuesSpeakViewController.swift */,
+				EA78A4E62685B226006956C8 /* QuestionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -515,13 +514,12 @@
 				EA78A3CC26853756006956C8 /* Ques.swift in Sources */,
 				EA78A3F426859E60006956C8 /* QuesListenViewController.swift in Sources */,
 				EAAB9DB3266D5C76009268B9 /* SigninController.swift in Sources */,
-				EA05B94E267A4FBA00507968 /* ImageQuestionViewController.swift in Sources */,
 				EA78A3D1268538C2006956C8 /* QuesMul.swift in Sources */,
-				EA05B949267A4E3000507968 /* QuestionViewController.swift in Sources */,
 				EA2A0FFC266BD995009C5980 /* AppDelegate.swift in Sources */,
 				EA4DBFCB26838B89001B1E5F /* HomeViewController.swift in Sources */,
 				EABCC508267E334D00D181F4 /* HomeTabViewController.swift in Sources */,
 				EA2A0FFE266BD995009C5980 /* SceneDelegate.swift in Sources */,
+				EA78A4E72685B226006956C8 /* QuestionViewController.swift in Sources */,
 				EA78A3782684FBD3006956C8 /* CustomButton.swift in Sources */,
 				EA3F61CA26790F0600894F14 /* ContainerViewController.swift in Sources */,
 				EA78A3EA26859E37006956C8 /* QuesMulViewController.swift in Sources */,
