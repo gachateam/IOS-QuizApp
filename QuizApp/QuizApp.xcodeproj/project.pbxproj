@@ -35,6 +35,7 @@
 		EA78A3F426859E60006956C8 /* QuesListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78A3F326859E60006956C8 /* QuesListenViewController.swift */; };
 		EA78A3F926859E6E006956C8 /* QuesSpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78A3F826859E6E006956C8 /* QuesSpeakViewController.swift */; };
 		EA78A4E72685B226006956C8 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78A4E62685B226006956C8 /* QuestionViewController.swift */; };
+		EA78A4F22685CF47006956C8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78A4F12685CF47006956C8 /* SignUpViewController.swift */; };
 		EA7F5650268428E500693270 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F564F268428E500693270 /* CollectionViewCell.swift */; };
 		EAAB9DB3266D5C76009268B9 /* SigninController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAB9DB2266D5C76009268B9 /* SigninController.swift */; };
 		EABCC508267E334D00D181F4 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCC506267E334D00D181F4 /* HomeTabViewController.swift */; };
@@ -96,6 +97,7 @@
 		EA78A3F326859E60006956C8 /* QuesListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuesListenViewController.swift; sourceTree = "<group>"; };
 		EA78A3F826859E6E006956C8 /* QuesSpeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuesSpeakViewController.swift; sourceTree = "<group>"; };
 		EA78A4E62685B226006956C8 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		EA78A4F12685CF47006956C8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA7F564F268428E500693270 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EAAB9DB2266D5C76009268B9 /* SigninController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninController.swift; sourceTree = "<group>"; };
 		EABCC506267E334D00D181F4 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 		EAAB9DAE266D5BCF009268B9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EA78A4F12685CF47006956C8 /* SignUpViewController.swift */,
 				EAAB9DB2266D5C76009268B9 /* SigninController.swift */,
 				EA05B94D267A4FBA00507968 /* ImageQuestionViewController.swift */,
 				EABCC506267E334D00D181F4 /* HomeTabViewController.swift */,
@@ -515,6 +518,7 @@
 				EA78A3F426859E60006956C8 /* QuesListenViewController.swift in Sources */,
 				EAAB9DB3266D5C76009268B9 /* SigninController.swift in Sources */,
 				EA78A3D1268538C2006956C8 /* QuesMul.swift in Sources */,
+				EA78A4F22685CF47006956C8 /* SignUpViewController.swift in Sources */,
 				EA2A0FFC266BD995009C5980 /* AppDelegate.swift in Sources */,
 				EA4DBFCB26838B89001B1E5F /* HomeViewController.swift in Sources */,
 				EABCC508267E334D00D181F4 /* HomeTabViewController.swift in Sources */,
