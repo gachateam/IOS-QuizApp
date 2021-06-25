@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class ContainerViewController: UIViewController {
+@IBDesignable open class ContainerViewController: UIViewController {
     //Manipulating container views
     fileprivate weak var viewController : UIViewController!
     //Keeping track of containerViews
@@ -80,9 +80,6 @@ open class ContainerViewController: UIViewController {
             }, completion: { (complete) in
                 self.viewController.didMove(toParent: self)
             })
-           
-           
-            
         }
         
     }
