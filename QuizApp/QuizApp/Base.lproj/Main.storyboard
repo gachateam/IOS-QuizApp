@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ikk-s6-0Fr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kdu-Hr-Jh5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -67,6 +67,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsC-9X-6Hd">
                                                 <rect key="frame" x="168" y="320" width="38" height="30"/>
                                                 <state key="normal" title="Login"/>
+                                                <connections>
+                                                    <action selector="loginBtn:" destination="Uk5-yz-U3R" eventType="touchUpInside" id="F5S-l4-KTf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -140,6 +143,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="email" destination="Qol-tl-LMi" id="4kn-ff-ah2"/>
+                        <outlet property="password" destination="2sK-Hv-X9V" id="2M7-hW-0Fn"/>
                         <segue destination="4Aa-PK-fNz" kind="show" identifier="login" id="LFp-u9-S4p"/>
                     </connections>
                 </viewController>
@@ -150,7 +155,7 @@
         <!--Navigation Controller-->
         <scene sceneID="2V1-Jo-eEg">
             <objects>
-                <navigationController id="4Aa-PK-fNz" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="home" id="4Aa-PK-fNz" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="dPg-13-Rbm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gpy-8N-bPv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -223,41 +228,33 @@
             </objects>
             <point key="canvasLocation" x="829" y="3164"/>
         </scene>
-        <!--Question View Controller-->
+        <!--View Controller-->
         <scene sceneID="DFz-tr-8HZ">
             <objects>
-                <viewController id="CJe-yG-7fq" customClass="QuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CJe-yG-7fq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apj-mN-HC8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-L6-9fL">
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-L6-9fL">
                                 <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="acd-qM-02W" kind="embed" identifier="container" id="6LF-ci-xp4"/>
                                 </connections>
                             </containerView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CbU-hp-FDa">
-                                <rect key="frame" x="89" y="175" width="236" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentSelectedItem:" destination="CJe-yG-7fq" eventType="valueChanged" id="I0W-Ql-FPo"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hcu-EO-xy8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eWB-L6-9fL" firstAttribute="centerX" secondItem="apj-mN-HC8" secondAttribute="centerX" id="OzX-VK-ytD"/>
+                            <constraint firstItem="eWB-L6-9fL" firstAttribute="centerY" secondItem="apj-mN-HC8" secondAttribute="centerY" id="eKV-0m-ev6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WUl-o5-nq8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bo1-Pp-iPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828.98550724637687" y="3963.6160714285711"/>
+            <point key="canvasLocation" x="829" y="3964"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ctR-Sb-LLO">
@@ -279,10 +276,10 @@
             </objects>
             <point key="canvasLocation" x="1790" y="1549"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="W8w-tR-gaL">
             <objects>
-                <viewController id="DeY-RF-QWJ" sceneMemberID="viewController">
+                <viewController id="DeY-RF-QWJ" customClass="SignUpViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cni-ZC-578">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,6 +318,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWr-Qq-jkD">
                                         <rect key="frame" x="183" y="478" width="48" height="30"/>
                                         <state key="normal" title="Signup"/>
+                                        <connections>
+                                            <action selector="signUpBtn:" destination="DeY-RF-QWJ" eventType="touchUpInside" id="TR1-Nm-5WR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -339,6 +339,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fk5-Uh-L1a"/>
+                    <connections>
+                        <outlet property="comfirmPass" destination="zzc-ig-MrK" id="Wc5-Ff-2pu"/>
+                        <outlet property="email" destination="j1h-Mt-bzf" id="i0n-gb-qqK"/>
+                        <outlet property="password" destination="YrC-6F-hlO" id="IXj-hb-QfS"/>
+                        <outlet property="userName" destination="54G-LE-owg" id="1sH-KB-gps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQP-ov-d79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -382,37 +388,23 @@
             </objects>
             <point key="canvasLocation" x="1558" y="3964"/>
         </scene>
-        <!--Image Question View Controller-->
+        <!--View Controller-->
         <scene sceneID="cdM-IH-tJ6">
             <objects>
-                <viewController id="Pvf-Po-eXe" customClass="ImageQuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pvf-Po-eXe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Ga-kq-1ej">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g31-Ws-Shb">
-                                <rect key="frame" x="94" y="133" width="138" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lH8-lm-Bs0"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <color key="tintColor" systemColor="linkColor"/>
-                        <constraints>
-                            <constraint firstItem="g31-Ws-Shb" firstAttribute="centerY" secondItem="1Ga-kq-1ej" secondAttribute="centerY" id="fjk-kA-IRH"/>
-                            <constraint firstItem="g31-Ws-Shb" firstAttribute="centerX" secondItem="1Ga-kq-1ej" secondAttribute="centerX" id="yLU-Sx-gcd"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ES7-86-NCG"/>
                     <size key="freeformSize" width="320" height="300"/>
-                    <connections>
-                        <outlet property="input" destination="g31-Ws-Shb" id="9Ho-u3-QTA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28T-rR-RZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234.7826086956525" y="3762.7232142857142"/>
+            <point key="canvasLocation" x="2235" y="3763"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Bk-U6-szB">
